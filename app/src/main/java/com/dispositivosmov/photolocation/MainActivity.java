@@ -113,6 +113,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    
+     SensorManager mSensorManager = (SensorManager)
+            getSystemService(SENSOR_SERVICE);
+    
     public void tirarFoto(){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, 1);
